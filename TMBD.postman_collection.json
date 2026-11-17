@@ -1,0 +1,277 @@
+{
+  "info": {
+    "_postman_id": "545d6a6c-4fad-429d-bbd3-cb903e6c4de7",
+    "name": "TMBD",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "59224324",
+    "_collection_link": "https://go.postman.co/collection/59224324-545d6a6c-4fad-429d-bbd3-cb903e6c4de7?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "Auth",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{base_url}}/movie/550",
+          "host": [
+            "{{base_url}}"
+          ],
+          "path": [
+            "movie",
+            "550"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Search Movies by Keyword",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{base_url}}/search/movie?query=inception&language=en-US",
+          "host": [
+            "{{base_url}}"
+          ],
+          "path": [
+            "search",
+            "movie"
+          ],
+          "query": [
+            {
+              "key": "query",
+              "value": "inception"
+            },
+            {
+              "key": "language",
+              "value": "en-US"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Search TV Shows by Name",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{base_url}}/search/tv?query=breaking+bad&language=en-US",
+          "host": [
+            "{{base_url}}"
+          ],
+          "path": [
+            "search",
+            "tv"
+          ],
+          "query": [
+            {
+              "key": "query",
+              "value": "breaking+bad"
+            },
+            {
+              "key": "language",
+              "value": "en-US"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Get Movie Details by Movie ID",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{base_url}}/movie/337563",
+          "host": [
+            "{{base_url}}"
+          ],
+          "path": [
+            "movie",
+            "337563"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Get Movie Credits (Cast & Crew)",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{base_url}}/movie/337563/credits",
+          "host": [
+            "{{base_url}}"
+          ],
+          "path": [
+            "movie",
+            "337563",
+            "credits"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Get Popular Movies",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{base_url}}/movie/popular?language=en-US&page=1",
+          "host": [
+            "{{base_url}}"
+          ],
+          "path": [
+            "movie",
+            "popular"
+          ],
+          "query": [
+            {
+              "key": "language",
+              "value": "en-US"
+            },
+            {
+              "key": "page",
+              "value": "1"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Get TV Show Details by ID",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{base_url}}/tv/1396",
+          "host": [
+            "{{base_url}}"
+          ],
+          "path": [
+            "tv",
+            "1396"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Get Movie Genres List",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{base_url}}/genre/movie/list?language=en",
+          "host": [
+            "{{base_url}}"
+          ],
+          "path": [
+            "genre",
+            "movie",
+            "list"
+          ],
+          "query": [
+            {
+              "key": "language",
+              "value": "en"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Discover Movies by Genre",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{base_url}}/discover/movie?with_genres={genre_id}&sort_by=popularity.desc",
+          "host": [
+            "{{base_url}}"
+          ],
+          "path": [
+            "discover",
+            "movie"
+          ],
+          "query": [
+            {
+              "key": "with_genres",
+              "value": "{genre_id}"
+            },
+            {
+              "key": "sort_by",
+              "value": "popularity.desc"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Get Now Playing Movies",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{base_url}}/movie/now_playing?language=en-US&page=1",
+          "host": [
+            "{{base_url}}"
+          ],
+          "path": [
+            "movie",
+            "now_playing"
+          ],
+          "query": [
+            {
+              "key": "language",
+              "value": "en-US"
+            },
+            {
+              "key": "page",
+              "value": "1"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Get Person Details (Actor/Director)",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{base_url}}/person/585986",
+          "host": [
+            "{{base_url}}"
+          ],
+          "path": [
+            "person",
+            "585986"
+          ]
+        }
+      },
+      "response": []
+    }
+  ],
+  "auth": {
+    "type": "bearer",
+    "bearer": [
+      {
+        "key": "token",
+        "value": "{{bearer_token}}",
+        "type": "string"
+      }
+    ]
+  }
+}
